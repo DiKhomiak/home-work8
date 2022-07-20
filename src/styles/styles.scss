@@ -1,0 +1,30 @@
+.table {
+  background-color: rgba(162, 215, 0, 1);
+  border: 4px solid white;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4fr 1fr 1fr 1fr 1fr;
+
+  div {
+    border: 4px solid white;
+    padding: 20px;
+  }
+  .item-1 {
+    grid-column: 1/5;
+  }
+  .item-2 {
+    grid-row: 2/6;
+  }
+  .item-4 {
+    grid-column: 3/5;
+  }
+  .item-5 {
+    grid-column: 2/4;
+  }
+  .item-10 {
+    grid-column: 2/5;
+  }
+}
