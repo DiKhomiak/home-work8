@@ -1,9 +1,10 @@
-.table {
+.table-1 {
   background-color: rgba(162, 215, 0, 1);
   border: 4px solid white;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3em;
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 4fr 1fr 1fr 1fr 1fr;
@@ -12,6 +13,7 @@
     border: 4px solid white;
     padding: 20px;
   }
+
   .item-1 {
     grid-column: 1/5;
   }
@@ -26,5 +28,37 @@
   }
   .item-10 {
     grid-column: 2/5;
+  }
+}
+
+.table-2 {
+  background-color: rgba(162, 215, 0, 1);
+  border: 4px solid white;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4fr 1fr 1fr 1fr 1fr;
+
+  div {
+    border: 4px solid white;
+    padding: 20px;
+  }
+
+  .item-1 {
+    grid-area: 1/1/2/5;
+  }
+  .item-2 {
+    grid-area: 2/1/6/2;
+  }
+  .item-4 {
+    grid-area: 2/3/4/4;
+  }
+  .item-5 {
+    grid-area: 2/4/5/5;
+  }
+  .item-6 {
+    grid-area: 3/2/6/3;
   }
 }
